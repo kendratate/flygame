@@ -1,11 +1,38 @@
+html{
+    background-color: royalblue;
+}
+
 body{
-    background-image: url("images/icecave.jpg");
-    background-repeat: no-repeat;
     margin: 0 auto;
     height: 100%;
     width: auto;
 }
 
 #mycanvas{
-    /*background-image: url("images/icecave.jpg");*/
+    margin-left: 40px;
+
+}
+
+#title{
+    font-family: fantasy;
+    font-size: 50px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#ScoreTitle{
+    margin: 0 auto;
+    font-size: larger;
+    font-family: fantasy;
+    float: left;
+    margin-left: 40%;
+    padding: 10px;
+}
+
+#score{
+    padding: 10px;
+    font-size: x-large;
+    float: left;
 }

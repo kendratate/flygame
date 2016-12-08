@@ -26,8 +26,8 @@ function initSprite(img){
         new Sprite(img, 195, 1, 93, 66),
     ];
 
-    topCoralSprite = new Sprite(img, 150, 150, 80, 300);
-    bottomCoralSprite = new Sprite(img, 280, 150, 80, 300);
+    topCoralSprite = new Sprite(img, 150, 150, 100, 300);
+    bottomCoralSprite = new Sprite(img, 280, 150, 100, 300);
 
     //foreground = new Sprite(img, 1, 100, 10, 10);
     //laserSprite = new Sprite(img, , , ,);

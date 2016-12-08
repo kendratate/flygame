@@ -11,6 +11,7 @@ var height;
 var currentState;
 var states = {Splash: 0, Game: 1, Score: 2};
 //var foregroundPosition = 0;
+var score = 0;
 
 var background = new Image();
 background.src = "images/icecave.jpg";
@@ -199,8 +200,8 @@ function onpress(evt){
             break;
         case states.Score:
             //reset to Splash
-            //showScore();
-            //currentState = states.Splash;
+            showScore();
+            currentState = states.Splash;
             break;
     }
 }
@@ -287,7 +288,7 @@ function Coral() {
         // intersection
         var cx = Math.min(Math.max(bird.x, this.x), this.x + this.width);
         var cy1 = Math.min(Math.max(bird.y, this.y), this.y + this.height);
-        var cy2 = Math.min(Math.max(bird.y, this.y + this.height + 100), this.y + 2 * this.height + 0);
+        var cy2 = Math.min(Math.max(bird.y, this.y + this.height + 100), this.y + 2 * this.height + 10);
         // Closest difference
         var dx = bird.x - cx;
         var dy1 = bird.y - cy1;
@@ -300,6 +301,9 @@ function Coral() {
         // if (r > d1 || r > d2) {
         if (r > d2){
             currentState = states.Score;
+        }
+        else{
+            document.getElementById("score").innerText = score++;
         }
     };
 
